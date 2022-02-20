@@ -1,4 +1,4 @@
-module github.com/sailist/gofrontmost
+module github.com/Make-life-game/gofrontmost
 
 go 1.17
 
