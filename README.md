@@ -6,7 +6,11 @@ Get MacOS frontmost Application by golang.
 
 ```shell
 go install github.com/Make-life-game/gofrontmost
-mv 
+```
+
+Will output json-format process infomation (with active window title).
+```shell
+{"CreateTime":1645181816691,"Name":"goland","Pid":11262,"Ppid":1,"Title":"gofrontmost – README.md"}
 ```
 
 ## development
@@ -17,5 +21,4 @@ cd gofrontmost
 
 go build .
 ./gofrontmost
-
 ```
