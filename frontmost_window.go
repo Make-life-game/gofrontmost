@@ -3,7 +3,6 @@ package main
 import (
 	"encoding/json"
 	"errors"
-	"fmt"
 	"github.com/shirou/gopsutil/v3/process"
 	"os"
 	"reflect"
@@ -120,7 +119,6 @@ func GetActiveProcess() (map[string]interface{}, error) {
 	if pid == 0 {
 		return dat, errors.New("No")
 	}
-	fmt.Println(pid)
 	dat["Pid"] = int32(pid)
 
 	ps, _ := process.NewProcess(int32(pid))
